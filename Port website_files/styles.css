@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.3); */
+
+    
+
+}
+.hero__section {
+    background: blue ;
+    padding: 20 ;
+    color: #fff ;
+
+}
+
+.hero__wrapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    
+}
+
+.column__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+
+}
+.hero__section {
+    padding: 20px; /* เพิ่มพื้นที่ภายใน */
+}
+
+.column__left span,
+.column__left h1,
+.column__left p {
+    margin-left: 20px; /* ระยะห่างขอบซ้าย */
+    margin-right: 20px; /* ระยะห่างขอบขวา */
+}
+    /* ปรับขนาด photo */
+.hero__img {
+    max-width: 400px;
+    width: 100%; 
+    height: auto; 
+}
+.column__left h1 {
+    font-size: 90px;
+}
+
+.column__left p {
+    font-size: 16px;
+    line-height: 2.3;
+}
+
+.column__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__img{
+    width: 400px;
+    height: auto;
+} 
+@media screen and (max-width:1100px) {
+        .hero__section {
+            padding: 30px;
+        }
+
+        .hero__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        .column__left h1 {
+            font-size: 80px;
+     }
+}
+ 
+    @media screen and (max-width: 460px) {
+        .hero__wrapp {
+        grid-template-rows: 600px;
+    }
+    .column__left h1 {
+        font-size: 32px;
+    }
+}
+    /*about section*/
+.main__section {
+    padding: 60px 60px;
+    background:blue;
+    color: #fff;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main__container h1 {
+    font-size: 120px;
+    color:#ffffff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#fff;
+     margin-bottom: 32px;
+}
+.main__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    gap: 20px;
+}
+
+.main_text {
+    padding-right: 20px; 
+}
+
+.main__text h2 {
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.main__text p {
+    line-height: 2.4;
+}
+
+.main__image {
+    display: flex;
+    justify-content: 700;
+
+}
+
+.main__img {
+    width: 420px;
+    height: 610px;
+}
+@media screen and (max-width: 1000px)
+   { .main__section {
+    padding: 30px;
+   }
+    
+   .main__content {
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr;
+   }
+
+   .main__image {
+    font-size: 70px;
+   }
+}
+@media screen and (max-width: 468px) {
+    .main__text h2 {
+        font-size: 32px;
+    }
+
+    .main__img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.service {
+    background-color: blue;
+    color:rgb(0, 2, 92);
+    position: relative;
+}
+
+
+    /*service CSS */
+.service__container {
+    background:#ffffff;
+    padding-top:100px;
+    padding-bottom: 100px;
+    padding-left:60px;
+    padding-right: 60px;
+}
+
+.service__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+@media screen and (max-width: 768px) {
+    .service__grid {
+        grid-template-columns: 1fr; /* เปลี่ยนเป็นคอลัมน์เดียว */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .service__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.service__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 50px;
+}
+
+.service__content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.service__content img {
+        margin-right: 50px;
+}
+.service_desc h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.service_desc p {
+    line-height: 2;
+}
+
+.byme {
+    height: 700px;
+    width: 100%;
+}
+.yellow_bar {
+    position: absolute ;
+    background: yellow ;
+    height: 80px ;
+    bottom: -40px ;
+    right: 0 ;
+    width: 80% ;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center ;
+}
+.yellow_bar img {
+    margin: 0 40px;
+}
+.yellow_bar p {
+    margin-right: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
